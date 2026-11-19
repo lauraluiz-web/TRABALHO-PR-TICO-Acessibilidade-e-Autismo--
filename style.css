@@ -1,0 +1,213 @@
+/* Reset básico e configurações gerais */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  background-color: #F8FAFC; /* Fundo claro suave (menos cansativo que branco puro) */
+  color: #1E293B; /* Texto escuro com alto contraste */
+}
+
+/* Container centralizado para evitar linhas de texto muito largas */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Link de acessibilidade para pular direto ao conteúdo */
+.pular-conteudo {
+  position: absolute;
+  left: -9999px;
+  background-color: #1E3A8A;
+  color: #FFFFFF;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.pular-conteudo:focus {
+  left: 16px;
+  top: 16px;
+  z-index: 100;
+}
+
+/* Destaque visível ao navegar com a tecla Tab */
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #D97706;
+  outline-offset: 3px;
+}
+
+/* Cabeçalho */
+.cabecalho {
+  background-color: #1E3A8A; /* Azul escuro calmo e de alto contraste */
+  color: #FFFFFF;
+  padding: 32px 0;
+  border-bottom: 4px solid #0F766E;
+}
+
+.cabecalho h1 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.cabecalho .descricao {
+  font-size: 1.1rem;
+  color: #E2E8F0;
+  margin-bottom: 24px;
+}
+
+/* Menu de Navegação */
+.menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.menu a {
+  display: inline-block;
+  background-color: #FFFFFF;
+  color: #1E3A8A;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 18px;
+  border-radius: 6px;
+}
+
+.menu a:hover {
+  background-color: #E2E8F0;
+}
+
+/* Seções de Conteúdo */
+.secao {
+  background-color: #FFFFFF;
+  border: 1px solid #CBD5E1;
+  border-radius: 8px;
+  padding: 28px;
+  margin-top: 28px;
+}
+
+.secao h2 {
+  font-size: 1.5rem;
+  color: #1E3A8A;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #E2E8F0;
+  padding-bottom: 8px;
+}
+
+.secao p {
+  margin-bottom: 16px;
+}
+
+/* Botões */
+.grupo-botoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.botao {
+  display: inline-block;
+  padding: 14px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.botao-primario {
+  background-color: #1E3A8A;
+  color: #FFFFFF;
+  border: 2px solid #1E3A8A;
+}
+
+.botao-primario:hover {
+  background-color: #172554;
+}
+
+.botao-secundario {
+  background-color: #0F766E;
+  color: #FFFFFF;
+  border: 2px solid #0F766E;
+}
+
+.botao-secundario:hover {
+  background-color: #115E59;
+}
+
+/* Imagem */
+.imagem-container {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.imagem-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #CBD5E1;
+}
+
+.imagem-container figcaption {
+  font-size: 0.95rem;
+  color: #475569;
+  margin-top: 8px;
+}
+
+/* Cards de Informações */
+.lista-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.card {
+  background-color: #F1F5F9;
+  border-left: 5px solid #1E3A8A;
+  padding: 16px;
+  border-radius: 6px;
+}
+
+.card h3 {
+  font-size: 1.15rem;
+  color: #0F172A;
+  margin-bottom: 6px;
+}
+
+.card p {
+  margin-bottom: 0;
+  font-weight: bold;
+  color: #1E3A8A;
+}
+
+/* Listas de Dicas e Contato */
+.lista-dicas,
+.lista-contato {
+  padding-left: 24px;
+  margin-top: 12px;
+}
+
+.lista-dicas li,
+.lista-contato li {
+  margin-bottom: 10px;
+}
+
+/* Rodapé */
+.rodape {
+  margin-top: 40px;
+  padding: 24px 0;
+  background-color: #E2E8F0;
+  color: #334155;
+  text-align: center;
+  font-size: 0.95rem;
+}
