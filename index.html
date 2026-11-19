@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guia Escolar Acessível</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Link para pular direto ao conteúdo (acessibilidade para teclado) -->
+  <a href="#conteudo-principal" class="pular-conteudo">Ir para o conteúdo principal</a>
+
+  <!-- Cabeçalho -->
+  <header id="inicio" class="cabecalho">
+    <div class="container">
+      <h1>Guia Escolar Acessível</h1>
+      <p class="descricao">
+        Este espaço apresenta informações escolares de maneira simples, organizada e acessível.
+      </p>
+
+      <!-- Menu de Navegação -->
+      <nav aria-label="Menu principal">
+        <ul class="menu">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#informacoes">Informações</a></li>
+          <li><a href="#dicas">Dicas</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main id="conteudo-principal" class="container">
+
+    <!-- Seção de Abertura e Botões de Acesso Rápido -->
+    <section class="secao destaque" aria-labelledby="titulo-boas-vindas">
+      <h2 id="titulo-boas-vindas">Bem-vindo à nossa escola</h2>
+      <p>
+        Aqui você encontra os horários das aulas, o local de atendimento e orientações para facilitar o seu dia a dia escolar.
+      </p>
+
+      <div class="grupo-botoes">
+        <a href="#informacoes" class="botao botao-primario">Ver Horários</a>
+        <a href="#contato" class="botao botao-secundario">Falar com a Secretaria</a>
+      </div>
+
+      <figure class="imagem-container">
+        <img 
+          src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='640' height='220' viewBox='0 0 640 220'><rect width='640' height='220' rx='12' fill='%23E2E8F0'/><rect x='220' y='60' width='200' height='120' rx='6' fill='%231E3A8A'/><polygon points='205,65 320,20 435,65' fill='%230F766E'/><rect x='300' y='125' width='40' height='55' fill='%23F8FAFC'/><rect x='245' y='85' width='35' height='30' fill='%23F8FAFC'/><rect x='360' y='85' width='35' height='30' fill='%23F8FAFC'/><circle cx='320' cy='45' r='10' fill='%23F8FAFC'/></svg>" 
+          alt="Ilustração simples de um prédio escolar azul com telhado verde, porta central e duas janelas em fundo cinza claro"
+        >
+        <figcaption>Ambiente escolar organizado e acolhedor para todos os estudantes.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Seção: Informações Importantes -->
+    <section id="informacoes" class="secao" aria-labelledby="titulo-informacoes">
+      <h2 id="titulo-informacoes">Informações Importantes</h2>
+      <p>Confira os horários e locais principais de funcionamento:</p>
+
+      <div class="lista-cards">
+        <article class="card">
+          <h3>Horário das aulas</h3>
+          <p>07h00 às 12h00</p>
+        </article>
+
+        <article class="card">
+          <h3>Intervalo</h3>
+          <p>09h30 às 09h50</p>
+        </article>
+
+        <article class="card">
+          <h3>Secretaria</h3>
+          <p>Bloco Administrativo (Térreo)</p>
+        </article>
+
+        <article class="card">
+          <h3>Atendimento</h3>
+          <p>08h00 às 17h00</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção: Comunicação Acessível -->
+    <section id="dicas" class="secao" aria-labelledby="titulo-dicas">
+      <h2 id="titulo-dicas">Comunicação Acessível</h2>
+      <p>
+        Uma comunicação clara ajuda todas as pessoas a compreenderem melhor as mensagens, especialmente estudantes autistas. Veja como aplicamos isso:
+      </p>
+
+      <ul class="lista-dicas">
+        <li>Utilizar linguagem clara e direta.</li>
+        <li>Evitar textos muito longos.</li>
+        <li>Organizar as informações por tópicos.</li>
+        <li>Utilizar títulos para separar os assuntos.</li>
+        <li>Evitar excesso de informações na mesma tela.</li>
+      </ul>
+    </section>
+
+    <!-- Seção: Contato -->
+    <section id="contato" class="secao" aria-labelledby="titulo-contato">
+      <h2 id="titulo-contato">Contato da Secretaria</h2>
+      <p>Precisa de ajuda ou quer tirar uma dúvida? Entre em contato pelos canais abaixo:</p>
+
+      <ul class="lista-contato">
+        <li><strong>Local:</strong> Bloco Administrativo, Sala 01</li>
+        <li><strong>Telefone:</strong> (41) 3000-0000</li>
+        <li><strong>E-mail:</strong> secretaria@escolaexemplo.edu.br</li>
+        <li><strong>Horário de atendimento:</strong> Segunda a sexta-feira, das 08h00 às 17h00</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="rodape">
+    <div class="container">
+      <p>Guia Escolar Acessível — Informação clara para todos.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
